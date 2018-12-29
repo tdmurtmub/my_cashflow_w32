@@ -1,0 +1,139 @@
+<MYCA$HFLOW Format="1">
+<CASHFLOW StartDate="07/06/2006" Duration="13"/>
+<ACCOUNTS>
+<ACCOUNT>
+<DESCRIPTION>Checking Account</DESCRIPTION>
+<AMOUNT>950</AMOUNT>
+</ACCOUNT>
+<ACCOUNT>
+<DESCRIPTION>Department Store Credit Card</DESCRIPTION>
+<AMOUNT>-268</AMOUNT>
+</ACCOUNT>
+<ACCOUNT>
+<DESCRIPTION>Discover Card</DESCRIPTION>
+<AMOUNT>-345</AMOUNT>
+</ACCOUNT>
+<ACCOUNT>
+<DESCRIPTION>Mastercard</DESCRIPTION>
+<AMOUNT>-500</AMOUNT>
+</ACCOUNT>
+<ACCOUNT>
+<DESCRIPTION>Savings Account</DESCRIPTION>
+<AMOUNT>500</AMOUNT>
+</ACCOUNT>
+<ACCOUNT>
+<DESCRIPTION>Visa Card</DESCRIPTION>
+<AMOUNT>-1540</AMOUNT>
+</ACCOUNT>
+</ACCOUNTS>
+<TRANSACTIONS>
+<TRANSACTION Type="Monthly">
+<DESCRIPTION>Cable TV</DESCRIPTION>
+<DATE>02/28/2005</DATE>
+<AMOUNT>-52</AMOUNT>
+<REPEAT Type="Monthly" Delta="1" Count="0" Day="28"/>
+</TRANSACTION>
+<TRANSACTION Type="Monthly">
+<DESCRIPTION>Car Payment</DESCRIPTION>
+<DATE>08/30/2004</DATE>
+<AMOUNT>-500</AMOUNT>
+<REPEAT Type="Monthly" Delta="1" Count="60" Day="0"/>
+</TRANSACTION>
+<TRANSACTION Type="Monthly">
+<DESCRIPTION>Cell Phone Bill</DESCRIPTION>
+<DATE>04/20/2005</DATE>
+<AMOUNT>-65</AMOUNT>
+<REPEAT Type="Monthly" Delta="1" Count="0" Day="20"/>
+</TRANSACTION>
+<TRANSACTION Type="Yearly">
+<DESCRIPTION>Club Membership</DESCRIPTION>
+<DATE>01/01/2005</DATE>
+<AMOUNT>-45</AMOUNT>
+<REPEAT Type="Yearly" Delta="1" Count="0"/>
+</TRANSACTION>
+<TRANSACTION Type="Monthly">
+<DESCRIPTION>Electric Bill</DESCRIPTION>
+<DATE>04/28/2005</DATE>
+<AMOUNT>-154</AMOUNT>
+<REPEAT Type="Monthly" Delta="1" Count="0" Day="28"/>
+</TRANSACTION>
+<TRANSACTION Type="Monthly">
+<DESCRIPTION>Garbage Bill</DESCRIPTION>
+<DATE>11/30/2004</DATE>
+<AMOUNT>-46</AMOUNT>
+<REPEAT Type="Monthly" Delta="2" Count="0" Day="0"/>
+</TRANSACTION>
+<TRANSACTION Type="Monthly">
+<DESCRIPTION>Gas Bill</DESCRIPTION>
+<DATE>04/15/2005</DATE>
+<AMOUNT>-50</AMOUNT>
+<REPEAT Type="Monthly" Delta="1" Count="0" Day="15"/>
+</TRANSACTION>
+<TRANSACTION Type="Yearly">
+<DESCRIPTION>Home Insurance</DESCRIPTION>
+<DATE>09/16/2004</DATE>
+<AMOUNT>-600</AMOUNT>
+<REPEAT Type="Yearly" Delta="1" Count="0"/>
+</TRANSACTION>
+<TRANSACTION Type="Yearly">
+<DESCRIPTION>Life Insurance Premium</DESCRIPTION>
+<DATE>11/04/2004</DATE>
+<AMOUNT>-587</AMOUNT>
+<REPEAT Type="Yearly" Delta="1" Count="0"/>
+</TRANSACTION>
+<TRANSACTION Type="Monthly">
+<DESCRIPTION>Mortgage</DESCRIPTION>
+<DATE>07/01/2004</DATE>
+<AMOUNT>-1500</AMOUNT>
+<REPEAT Type="Monthly" Delta="1" Count="0" Day="1"/>
+</TRANSACTION>
+<TRANSACTION Type="Weekly">
+<DESCRIPTION>Payday</DESCRIPTION>
+<DATE>01/31/2005</DATE>
+<AMOUNT>2165</AMOUNT>
+<REPEAT Type="Weekly" Delta="2" Count="0"/>
+</TRANSACTION>
+<TRANSACTION Type="Yearly">
+<DESCRIPTION>Property Taxes</DESCRIPTION>
+<DATE>12/10/2004</DATE>
+<AMOUNT>-1463</AMOUNT>
+<REPEAT Type="Yearly" Delta="1" Count="0"/>
+</TRANSACTION>
+<TRANSACTION Type="Monthly">
+<DESCRIPTION>Sewer</DESCRIPTION>
+<DATE>03/07/2005</DATE>
+<AMOUNT>-51</AMOUNT>
+<REPEAT Type="Monthly" Delta="2" Count="0" Day="7"/>
+</TRANSACTION>
+<TRANSACTION Type="Weekly">
+<DESCRIPTION>Staples</DESCRIPTION>
+<DATE>03/26/2005</DATE>
+<AMOUNT>-325</AMOUNT>
+<REPEAT Type="Weekly" Delta="1" Count="0"/>
+</TRANSACTION>
+<TRANSACTION Type="Once">
+<DESCRIPTION>Trip</DESCRIPTION>
+<DATE>08/09/2005</DATE>
+<AMOUNT>-5000</AMOUNT>
+<REPEAT Type="Once" Delta="1" Count="1"/>
+</TRANSACTION>
+<TRANSACTION Type="Yearly">
+<DESCRIPTION>Vehicle Insurance</DESCRIPTION>
+<DATE>09/12/2004</DATE>
+<AMOUNT>-1400</AMOUNT>
+<REPEAT Type="Yearly" Delta="1" Count="0"/>
+</TRANSACTION>
+<TRANSACTION Type="Yearly">
+<DESCRIPTION>Vehicle Registration</DESCRIPTION>
+<DATE>01/02/2005</DATE>
+<AMOUNT>-314</AMOUNT>
+<REPEAT Type="Yearly" Delta="1" Count="0"/>
+</TRANSACTION>
+<TRANSACTION Type="Monthly">
+<DESCRIPTION>Water Bill</DESCRIPTION>
+<DATE>04/28/2005</DATE>
+<AMOUNT>-53</AMOUNT>
+<REPEAT Type="Monthly" Delta="1" Count="0" Day="28"/>
+</TRANSACTION>
+</TRANSACTIONS>
+</MYCA$HFLOW>

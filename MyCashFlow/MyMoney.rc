@@ -1,0 +1,480 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MyMoney.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MyMoney.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 227, 95
+STYLE DS_SETFONT | WS_POPUP | WS_BORDER
+FONT 10, "Arial", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,171,4,50,14
+    PUSHBUTTON      "Make a Donation",IDC_DONATE,4,75,77,14
+    PUSHBUTTON      "Check for Updates",IDC_HOMEPAGE,138,75,83,14,BS_FLAT
+    ICON            IDR_MAINFRAME,IDC_STATIC,9,10,20,20
+    LTEXT           "My Cashflow for Windows",IDC_STATIC,34,7,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright © 2004-2009 by Wesley Steiner",IDC_STATIC,34,
+                    23,158,8
+    LTEXT           "mail@wesleysteiner.com",IDC_STATIC,34,31,119,8
+    LTEXT           "<version string>",IDC_STATIC_VERSION,34,15,119,8,
+                    SS_NOPREFIX
+    CTEXT           "This software is the result of my own efforts and is offered to you free for personal use. Your input and donations are appreciated. Please visit the web site for more information.",
+                    IDC_STATIC,11,44,201,31,NOT WS_GROUP
+END
+
+IDD_ADD_TRANSACTION DIALOGEX 0, 0, 189, 228
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Transaction Editor"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_DESC,17,18,156,126,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_STARTDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,17,51,65,13
+    EDITTEXT        IDC_AMT,17,82,51,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Debit",IDC_DEBIT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    79,84,33,10
+    CONTROL         "Credit",IDC_CREDIT,"Button",BS_AUTORADIOBUTTON,117,84,
+                    34,10
+    CONTROL         "Does not Repeat",IDC_REPGRPONCE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,14,116,70,10
+    CONTROL         "Repeats",IDC_REPGRPEVERY,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,14,131,43,10
+    COMBOBOX        IDC_REP1FREQ,60,130,58,66,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_REP1INTERVAL,123,130,49,68,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_OCCURRENCES,68,180,36,13,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_ENDOCCURSPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,90,172,11,12
+    PUSHBUTTON      "Add",IDOK,132,207,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,207,50,14
+    GROUPBOX        "Insertion Date",IDC_STATIC,7,40,175,29
+    GROUPBOX        "Amount",IDC_STATIC,7,71,175,30
+    GROUPBOX        "Description",IDC_STATIC,7,6,175,32
+    GROUPBOX        "Repeating",IDC_STATIC,7,103,175,48
+    LTEXT           "Occurrences",IDC_STATIC,110,182,47,10
+    CONTROL         "Never Ends",IDC_ENDGRPNEVER,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,14,167,53,10
+    CONTROL         "Ends After",IDC_ENDGRPAFTER,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,14,181,52,10
+    GROUPBOX        "Ending",IDC_STATIC,7,154,175,47
+END
+
+IDD_PAGE_CASHFLOW DIALOGEX 0, 0, 249, 295
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Cash Flow"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "List2",IDC_XLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,3,24,242,117
+    PUSHBUTTON      "<<",IDC_BUTTONDECDATE,3,4,23,14,BS_FLAT
+    PUSHBUTTON      ">>",IDC_BUTTONINCDATE,93,4,23,14,BS_FLAT
+    CONTROL         "Spin1",IDC_SPIN_DURATION,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ARROWKEYS | UDS_HORZ | WS_TABSTOP,
+                    162,4,27,14
+    RTEXT           "Duration:",IDC_STATIC,124,8,33,10,NOT WS_GROUP
+    LTEXT           "Months",IDC_STATIC,204,8,25,10,NOT WS_GROUP
+    RTEXT           "99",IDC_STATIC_MONTHS,190,8,11,10,NOT WS_GROUP
+    PUSHBUTTON      "Starting Date...",IDC_STARTINGDATE,30,4,59,14
+END
+
+IDD_PAGE_ACCOUNTS DIALOG  0, 0, 172, 169
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Current Accounts"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_ALIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | 
+                    WS_BORDER | WS_TABSTOP,3,3,141,139
+END
+
+IDD_PAGE_TRANSACTIONS DIALOG  0, 0, 148, 130
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Transactions"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_TLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SORTASCENDING | WS_BORDER | 
+                    WS_TABSTOP,3,3,122,108
+END
+
+IDD_ADD_ACCOUNT DIALOGEX 0, 0, 221, 99
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Account Editor"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_DESC,15,19,189,126,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_BALANCE,15,51,41,12,ES_RIGHT | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Add",IDOK,164,78,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,78,50,14
+    GROUPBOX        "Description",IDC_STATIC,7,7,207,32
+    GROUPBOX        "Balance",IDC_STATIC,7,40,207,32
+    LTEXT           "Enter the current balance for this account in whole number units (no decimals).",
+                    IDC_STATIC,64,49,138,18
+END
+
+IDD_EDIT_STARTDATE DIALOG  0, 0, 202, 68
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Starting Date"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "DateTimePicker1",IDC_STARTDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,68,26,65,13
+    PUSHBUTTON      "OK",IDOK,145,47,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,47,50,14
+    CTEXT           "Enter or select a new starting date for your cash flow.",
+                    IDC_STATIC,15,9,171,11,NOT WS_GROUP
+END
+
+IDD_SHAREDITEMEDITDIALOG DIALOG  0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,129,26,50,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,6,2,0
+ PRODUCTVERSION 0,6,2,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Wesley Steiner"
+            VALUE "FileDescription", "MyCashflow Application for Windows"
+            VALUE "FileVersion", "0.6.2.0"
+            VALUE "InternalName", "MyCashflow"
+            VALUE "LegalCopyright", "Copyright © 2004-2009"
+            VALUE "OriginalFilename", "MyCashflow.exe"
+            VALUE "ProductName", "My Cashflow"
+            VALUE "ProductVersion", "0.6.2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 221
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_ADD_TRANSACTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 221
+    END
+
+    IDD_PAGE_CASHFLOW, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 245
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 288
+    END
+
+    IDD_PAGE_ACCOUNTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 165
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_PAGE_TRANSACTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 141
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_ADD_ACCOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 92
+    END
+
+    IDD_EDIT_STARTDATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_SHAREDITEMEDITDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "&Autosave on exit",           ID_FILE_AUTOSAVEONEXIT
+        , CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "&Edit Selected Entry...\tEnter", ID_EDIT_SELECTEDITEM
+        MENUITEM "&Delete Selected Entry...\tDelete", ID_EDIT_DELSELENTRY
+        MENUITEM SEPARATOR
+        MENUITEM "Add a New &Account...",       ID_EDIT_ADDACCOUNT
+        MENUITEM "Add a New &Transaction...",   ID_EDIT_ADDTRANX
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "&Home Page",                  ID_HELP_HOMEPAGE
+        MENUITEM SEPARATOR
+        MENUITEM "&About My Cashflow...",       ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ADD_TRANSACTION DLGINIT
+BEGIN
+    IDC_REP1FREQ, 0x403, 6, 0
+0x7645, 0x7265, 0x0079, 
+    IDC_REP1FREQ, 0x403, 12, 0
+0x7645, 0x7265, 0x2079, 0x744f, 0x6568, 0x0072, 
+    IDC_REP1FREQ, 0x403, 12, 0
+0x7645, 0x7265, 0x2079, 0x6854, 0x7269, 0x0064, 
+    IDC_REP1FREQ, 0x403, 13, 0
+0x7645, 0x7265, 0x2079, 0x6f46, 0x7275, 0x6874, "\000" 
+    IDC_REP1INTERVAL, 0x403, 4, 0
+0x6144, 0x0079, 
+    IDC_REP1INTERVAL, 0x403, 5, 0
+0x6557, 0x6b65, "\000" 
+    IDC_REP1INTERVAL, 0x403, 6, 0
+0x6f4d, 0x746e, 0x0068, 
+    IDC_REP1INTERVAL, 0x403, 5, 0
+0x6559, 0x7261, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS 
+BEGIN
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_DELSELENTRY,    VIRTKEY, NOINVERT
+    VK_RETURN,      ID_EDIT_SELECTEDITEM,   VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About My Cashflow..."
+    IDS_APPTITLE            "My Cashflow"
+    IDS_TRANXCOLHDRDATE     "Start Date"
+    IDS_TRANXCOLHDRDESC     "Description"
+    IDS_TRANXCOLHDRAMNT     "Amount"
+    IDS_CASHFLOWCOLHDRBAL   "Balance"
+    IDS_TRANXCOLHDRREPEAT   "Repeats"
+    IDS_ACCNTDLGMODEUPDATE  "Update"
+    IDS_CASHFLOWCOLHDRDATE  "Date"
+    IDS_CURRENTACCOUNTS     "Current Accounts"
+    IDS_TRANXDLGMODEUPDATE  "Update"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_EXIT            "Saves all changes and exits the program."
+    ID_EDIT_ADDTRANX        "Adds a new transaction."
+    ID_EDIT_ADDACCOUNT      "Add a new account."
+    ID_EDIT_SELECTEDITEM    "Edits the selected entry in the list."
+    ID_EDIT_DELSELENTRY     "Deletes the selected entry from the list."
+    ID_HELP_HOMEPAGE        "Go to My Cashflow Home Page"
+    ID_FILE_AUTOSAVEONEXIT  "Automatically save all changes on exit."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Displays information about this product."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_SAVE            "Saves all changes to persistent storage."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ACCNTSCOLHDRBAL     "Balance"
+    IDS_CONFIRMDELETE       "Are you sure you want to delete the selected entry?"
+    IDS_CONFIRMDELETETITLE  "Delete Selection"
+    IDS_NOBROWSERTEXT       "Unable to launch your Internet browser.\n\nTo get to My Cashflow home page you can start your browser manually\nand enter the following line in the Address bar:"
+    IDS_ERRORMSGTITLE       "Application Error"
+    IDS_SAVECHANGES         "You have made changes to your Cashflow.\n\nDo you want to save the changes?"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\MyMoney.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
