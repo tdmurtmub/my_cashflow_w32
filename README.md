@@ -1,2 +1,2 @@
 # my_cashflow_w32
-My Cashflow for Windows to visualize your personal short or long term cash flow.
+Have you ever wondered how much of your paycheck is really available to spend frivolously. If you buy that new toy today will you have enough to cover bills and expenses that will occur months from now? Sure, there are some big-name software packages that can do this for you but they often hide the fact that good money management is nothing more than tracking money in (income) vs. money out (expenses) over time. That's what My Cashflow does for you and its free and fun!
