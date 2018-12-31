@@ -1,4 +1,4 @@
-# my_cashflow_w32
+# My CashFlow for Windows
 
 https://www.wesleysteiner.com/mycashflow/index.html
 
